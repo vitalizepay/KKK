@@ -5,6 +5,8 @@ import ootyHero from '@/assets/destinations/ooty-hero.jpg';
 import maduraiTemple from '@/assets/destinations/madurai-temple.jpg';
 import kanyakumariRock from '@/assets/destinations/kanyakumari-rock.jpg';
 import mahabalipuramShore from '@/assets/destinations/mahabalipuram-shore-temple.jpg';
+import topSlipsImg from '@/assets/destinations/topslips-entrance.svg';
+import valparaiImg from '@/assets/destinations/valparai-bison.svg';
 
 const PackagesSection = () => {
   const packages = [
@@ -16,30 +18,27 @@ const PackagesSection = () => {
       duration: "3D/2N",
       highlights: "Tea Gardens, Botanical Garden, Toy Train, Doddabetta Peak",
       highlightsTamil: "தேயிலை தோட்டங்கள், தாவரவியல் பூங்கா, பொம்மை ரயில்",
-      price: "8,999",
       category: "Hill Station"
     },
     {
       id: 2,
-      title: "Madurai-Rameswaram-Kanyakumari",
-      titleTamil: "மதுரை-ராமேஸ்வரம்-கன்னியாகுமரி",
-      image: maduraiTemple,
-      duration: "4D/3N",
-      highlights: "Meenakshi Temple, Ramanathaswamy Temple, Vivekananda Rock",
-      highlightsTamil: "மீனாக்ஷி கோயில், ராமநாதசுவாமி கோயில்",
-      price: "12,999",
-      category: "Temple Circuit"
+      title: "Top Slips - Scenic Cascades",
+      titleTamil: "டாப் ஸ்லிப்ஸ் - சிற்று வாய்க்கை",
+      image: topSlipsImg,
+      duration: "2D/1N",
+      highlights: "Cascades, Viewpoints, Wildlife",
+      highlightsTamil: "அருவிகள், பார்வை இடங்கள், வன்ய வாழ்க்கை",
+      category: "Nature"
     },
     {
       id: 3,
-      title: "Kodaikanal Honeymoon Special",
-      titleTamil: "கொடைக்கானல் தேனிலவு சிறப்பு",
-      image: kanyakumariRock,
-      duration: "3D/2N",
-      highlights: "Lake View, Coaker's Walk, Silver Cascade Falls, Romantic Spots",
-      highlightsTamil: "ஏரி காட்சி, கோக்கர் நடைப்பாதை, வெள்ளி அருவி",
-      price: "9,999",
-      category: "Honeymoon"
+      title: "Valparai Tea Estate Tour",
+      titleTamil: "வால்பாறை தேயிலை தோட்ட சுற்றுலா",
+      image: valparaiImg,
+      duration: "2D/1N",
+      highlights: "Tea Plantations, Wildlife Spotting, Scenic Mountains",
+      highlightsTamil: "தேயிலை தோட்டங்கள், வனவிலங்கு காணல்",
+      category: "Adventure"
     },
     {
       id: 4,
@@ -49,7 +48,6 @@ const PackagesSection = () => {
       duration: "3D/2N",
       highlights: "Shore Temple, French Colony, Marina Beach, Heritage Sites",
       highlightsTamil: "கடற்கரை கோயில், பிரெஞ்சு காலனி, மெரினா கடற்கரை",
-      price: "10,999",
       category: "Heritage"
     },
     {
@@ -60,7 +58,6 @@ const PackagesSection = () => {
       duration: "2D/1N",
       highlights: "Emerald Lake, Rose Garden, Coffee Plantations, Viewpoints",
       highlightsTamil: "மரகத ஏரி, ரோசா பூங்கா, காபி தோட்டங்கள்",
-      price: "6,999",
       category: "Weekend"
     },
     {
@@ -71,7 +68,6 @@ const PackagesSection = () => {
       duration: "4D/3N",
       highlights: "9 Sacred Temples, Thanjavur, Trichy, Spiritual Journey",
       highlightsTamil: "9 புனித கோயில்கள், தஞ்சாவூர், திருச்சி",
-      price: "11,999",
       category: "Spiritual"
     },
     {
@@ -82,7 +78,6 @@ const PackagesSection = () => {
       duration: "3D/2N",
       highlights: "Palani Murugan Temple, Courtallam Falls, Nature Therapy",
       highlightsTamil: "பழனி முருகன் கோயில், கூற்றாலம் அருவி",
-      price: "8,499",
       category: "Nature"
     },
     {
@@ -93,7 +88,6 @@ const PackagesSection = () => {
       duration: "2D/1N",
       highlights: "Tea Plantations, Wildlife Spotting, Scenic Mountains",
       highlightsTamil: "தேயிலை தோட்டங்கள், வனவிலங்கு காணல்",
-      price: "7,499",
       category: "Adventure"
     }
   ];
@@ -146,11 +140,7 @@ const PackagesSection = () => {
                   {pkg.highlights}
                 </p>
                 
-                <div className="flex items-center justify-between mb-4">
-                  <div>
-                    <span className="text-2xl font-bold text-primary">₹{pkg.price}</span>
-                    <span className="text-sm text-muted-foreground ml-1">per person</span>
-                  </div>
+                <div className="flex items-center justify-center mb-4">
                   <div className="flex items-center text-yellow-500">
                     <i className="fas fa-star text-sm"></i>
                     <i className="fas fa-star text-sm"></i>

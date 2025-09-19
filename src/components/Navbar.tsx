@@ -34,13 +34,14 @@ const Navbar = () => {
   const currentMenuItems = language === 'EN' ? menuItems : menuItemsTamil;
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-40">
+    <nav className="bg-white/95 backdrop-blur-md shadow-sm sticky top-0 z-40 border-b border-gray-100">
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center py-4">
           {/* Logo */}
           <div className="flex items-center">
-            <div className="text-2xl font-bold text-primary">
-              KKK <span className="text-secondary">Tours & Travels</span>
+            <div className="text-2xl font-bold">
+              <span className="text-blue-600">KKK Tours and Travels</span>
+              <span className="text-gray-800 ml-1 text-lg font-medium">Tamil Nadu</span>
             </div>
           </div>
 
@@ -50,25 +51,30 @@ const Navbar = () => {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-foreground hover:text-primary transition-colors font-medium"
+                className="text-gray-600 hover:text-blue-600 transition-colors font-medium relative group"
               >
                 {item.name}
+                <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full"></span>
               </a>
             ))}
           </div>
 
           {/* Right side - Language toggle and CTA */}
-          <div className="hidden lg:flex items-center space-x-4">
+          <div className="hidden lg:flex items-center space-x-6">
             <button
               onClick={toggleLanguage}
-              className="flex items-center space-x-1 px-3 py-2 rounded-lg border border-border hover:bg-muted transition-colors"
+              className="flex items-center space-x-2 text-gray-600 hover:text-blue-600 transition-colors font-medium"
             >
-              <i className="fas fa-globe text-primary"></i>
-              <span className="font-medium">{language}</span>
+              <span>{language}</span>
+              <i className="fas fa-chevron-down text-sm"></i>
             </button>
             
-            <Button className="btn-hero">
-              {language === 'EN' ? 'Get a Quote' : 'மேற்கோள் பெறுங்கள்'}
+            <Button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:scale-105">
+              {language === 'EN' ? 'Sign up' : 'பதிவு செய்க'}
+            </Button>
+            
+            <Button variant="ghost" className="text-gray-700 font-medium">
+              {language === 'EN' ? 'Login' : 'உள்நுழைய'}
             </Button>
           </div>
 

@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="skyGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#B0E0E6"/>
+      <stop offset="50%" stop-color="#87CEEB"/>
+      <stop offset="100%" stop-color="#E0F6FF"/>
+    </linearGradient>
+    <linearGradient id="mountainGrad" x1="0" y1="0" x2="0.3" y2="1">
+      <stop offset="0%" stop-color="#2F4F4F"/>
+      <stop offset="50%" stop-color="#4682B4"/>
+      <stop offset="100%" stop-color="#228B22"/>
+    </linearGradient>
+    <linearGradient id="teaGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#32CD32"/>
+      <stop offset="100%" stop-color="#228B22"/>
+    </linearGradient>
+    <radialGradient id="cloudGrad" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="80%" stop-color="#F0F8FF"/>
+      <stop offset="100%" stop-color="#E6F3FF"/>
+    </radialGradient>
+  </defs>
+  
+  <!-- Sky -->
+  <rect width="800" height="400" fill="url(#skyGrad)"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="150" cy="80" rx="40" ry="20" fill="url(#cloudGrad)" opacity="0.8"/>
+  <ellipse cx="180" cy="75" rx="35" ry="18" fill="url(#cloudGrad)" opacity="0.8"/>
+  <ellipse cx="600" cy="120" rx="50" ry="25" fill="url(#cloudGrad)" opacity="0.7"/>
+  
+  <!-- Distant mountains -->
+  <polygon points="0,200 150,80 300,120 500,60 650,100 800,80 800,400 0,400" fill="url(#mountainGrad)" opacity="0.9"/>
+  
+  <!-- Mid-range hills -->
+  <polygon points="0,280 200,180 400,220 600,160 800,190 800,400 0,400" fill="#3CB371" opacity="0.8"/>
+  
+  <!-- Tea plantation terraces -->
+  <path d="M0,320 C100,315 200,325 300,320 C400,315 500,325 600,320 C700,315 800,325 800,320 L800,340 C700,335 600,345 500,340 C400,335 300,345 200,340 C100,335 0,345 0,340 Z" fill="url(#teaGrad)"/>
+  <path d="M0,340 C100,335 200,345 300,340 C400,335 500,345 600,340 C700,335 800,345 800,340 L800,360 C700,355 600,365 500,360 C400,355 300,365 200,360 C100,355 0,365 0,360 Z" fill="url(#teaGrad)" opacity="0.9"/>
+  <path d="M0,360 C100,355 200,365 300,360 C400,355 500,365 600,360 C700,355 800,365 800,360 L800,380 C700,375 600,385 500,380 C400,375 300,385 200,380 C100,375 0,385 0,380 Z" fill="url(#teaGrad)" opacity="0.8"/>
+  
+  <!-- Tea bushes (detailed) -->
+  <ellipse cx="120" cy="340" rx="15" ry="8" fill="#228B22"/>
+  <ellipse cx="200" cy="350" rx="12" ry="6" fill="#32CD32"/>
+  <ellipse cx="320" cy="345" rx="18" ry="9" fill="#228B22"/>
+  <ellipse cx="450" cy="355" rx="14" ry="7" fill="#32CD32"/>
+  <ellipse cx="580" cy="340" rx="16" ry="8" fill="#228B22"/>
+  <ellipse cx="680" cy="350" rx="13" ry="6" fill="#32CD32"/>
+  
+  <!-- Road/path winding through plantation -->
+  <path d="M50,400 Q200,380 350,390 Q500,400 650,385 Q750,380 800,385" stroke="#CD853F" stroke-width="12" fill="none" opacity="0.7"/>
+  
+  <!-- Ground/base -->
+  <rect x="0" y="400" width="800" height="200" fill="#8FBC8F"/>
+  
+  <!-- Tea estate buildings in distance -->
+  <rect x="600" y="300" width="40" height="30" fill="#8B4513"/>
+  <polygon points="600,300 620,285 640,300" fill="#A0522D"/>
+  
+  <!-- Some scattered trees -->
+  <ellipse cx="100" cy="380" rx="20" ry="15" fill="#006400"/>
+  <ellipse cx="700" cy="375" rx="25" ry="18" fill="#006400"/>
+  
+  <!-- Realistic lighting and atmospheric perspective -->
+  <rect x="0" y="0" width="800" height="600" fill="url(#skyGrad)" opacity="0.05"/>
+</svg>

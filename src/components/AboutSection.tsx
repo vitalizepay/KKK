@@ -3,13 +3,6 @@ import React from 'react';
 const AboutSection = () => {
   const features = [
     {
-      icon: "fas fa-handshake",
-      title: "Transparent Pricing",
-      titleTamil: "வெளிப்படையான விலை",
-      description: "No hidden charges. What you see is what you pay.",
-      descriptionTamil: "மறைந்த கட்டணங்கள் இல்லை. நீங்கள் பார்ப்பதுதான் நீங்கள் செலுத்துவது."
-    },
-    {
       icon: "fas fa-user-tie",
       title: "Expert Drivers",
       titleTamil: "நிபுணத்துவ ஓட்டுநர்கள்",
